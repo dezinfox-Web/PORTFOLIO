@@ -57,7 +57,7 @@ const CornerObject = ({
         rotate,
         filter: 'blur(0px)',
         duration: 2.2,
-        delay: delay + 1.5,
+        delay: delay,
         ease: 'power4.out',
       }
     );
@@ -128,7 +128,7 @@ export default function Objects() {
         corner="top-right"
         size="w-[14rem] md:w-[18rem]"
         parallaxSpeed={0.4}
-        delay={0.4}
+        delay={0.1}
         rotate={6}
         offsetX={-150}
         offsetY={40}
@@ -141,7 +141,7 @@ export default function Objects() {
         corner="top-left"
         size="w-[14rem] md:w-[18rem]"
         parallaxSpeed={0.35}
-        delay={0.6}
+        delay={0.25}
         rotate={22}
         offsetX={160}
         offsetY={40}
@@ -154,7 +154,7 @@ export default function Objects() {
         corner="bottom-right"
         size="w-[14rem] md:w-[22rem]"
         parallaxSpeed={0.45}
-        delay={0.8}
+        delay={0.4}
         rotate={-24}
         offsetY={20}
         offsetX={-90}

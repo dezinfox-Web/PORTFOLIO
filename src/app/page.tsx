@@ -20,23 +20,15 @@ import PosterGallerySection from '@/components/PosterGallerySection';
 import ContactFooterSection from '@/components/ContactFooterSection';
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-
   const handleEnterExperience = () => {
     if (logoSectionRef.current) {
       logoSectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  useEffect(() => {
-    // Artificial delay to simulate "loading" cinematic intro
-    const timer = setTimeout(() => setLoading(false), 500);
-    return () => clearTimeout(timer);
-  }, []);
-
   const logoSectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
-    target: !loading ? logoSectionRef : undefined,
+    target: logoSectionRef,
     offset: ["start end", "start start"]
   });
 
@@ -89,10 +81,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-dark-100 overflow-hidden">
-      <AnimatePresence>
-        {!loading && (
-          <>
-            {/* Base Cinematic Elements */}
+      {/* Base Cinematic Elements */}
             <AmbientGlow />
 
             {/* Hero Section */}
@@ -122,7 +111,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 2, duration: 1 }}
+                transition={{ delay: 0.8, duration: 1 }}
                 className="absolute bottom-10 left-32 z-40 w-24 h-24 flex items-center justify-center pointer-events-none"
               >
 
@@ -163,7 +152,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.5, duration: 0.8 }}
+                transition={{ delay: 0.6, duration: 0.8 }}
                 className="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-end gap-1 text-[10px] tracking-[0.2em] uppercase text-white/30"
               >
                 <span className="text-primary font-bold">48.029° N</span>
@@ -246,29 +235,6 @@ export default function Home() {
               {/* Contact / Footer Section */}
               <ContactFooterSection />
             </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-
-      {/* Intro Black Screen Fadeout */}
-      <AnimatePresence>
-        {loading && (
-          <motion.div
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="fixed inset-0 bg-black z-[999] flex items-center justify-center"
-          >
-            <motion.div
-              animate={{ scale: [1, 1.2, 1], opacity: [0.3, 1, 0.3] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="text-primary text-xl font-display tracking-[1em] uppercase"
-            >
-              SACHIN
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </main>
   );
 }
