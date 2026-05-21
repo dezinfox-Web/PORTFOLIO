@@ -91,12 +91,7 @@ export default function PosterGallerySection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 
-                {/* Floating Meta Tag on Hover (always visible at bottom) */}
-                <div className="absolute bottom-4 left-4 z-20">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur-md text-[#161d31] text-[10px] font-bold tracking-widest uppercase rounded-full shadow-sm">
-                    {poster.src.split('/').pop()?.split('.')[0].replace(/[-_]/g, ' ')}
-                  </span>
-                </div>
+
               </motion.div>
             );
           })}
