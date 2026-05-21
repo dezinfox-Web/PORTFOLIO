@@ -17,8 +17,9 @@ const POSTERS = [
   { src: '/assets/poster/image.png', alt: 'Poster Image New', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/1 (11).jpeg', alt: 'Poster Set 6', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/set5.jpeg', alt: 'Poster Set 5', span: 'col-span-1 md:col-span-3 row-span-2' },
-  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 8.31.36 PM.jpeg', alt: 'Poster Campaign 1', span: 'col-span-1 md:col-span-1 row-span-1' },
-  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 8.31.37 PM.jpeg', alt: 'Poster Campaign 2', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 9.14.30 PM.jpeg', alt: 'Poster Campaign 3', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/1 (19).jpeg', alt: 'Poster Set 7', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 8.44.04 PM.jpeg', alt: 'New Poster Image', span: 'col-span-1 md:col-span-1 row-span-1' },
 ];
 
 export default function PosterGallerySection() {
@@ -63,9 +64,7 @@ export default function PosterGallerySection() {
           <p className="text-sm font-sans text-stone-600 leading-relaxed font-medium">
             An exploration of typographic hierarchy, bold colors, and striking imagery. Each poster is designed to capture attention and communicate powerfully.
           </p>
-          <span className="text-[10px] tracking-[0.15em] font-sans font-bold text-stone-400 uppercase mt-4">
-            Curated selection • 2023 - 2026
-          </span>
+          <span className="text-[10px] tracking-[0.15em] font-sans font-bold text-stone-400 uppercase mt-4">Curated selection • EST 2024 - present</span>
         </div>
       </motion.div>
 

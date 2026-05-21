@@ -99,8 +99,7 @@ export default function LogoGridSection({ scrollProgress }: LogoGridSectionProps
                 return (
                   <div key={index} className={`p-6 flex flex-col justify-center items-start ${borderClasses}`}>
                     <div className="flex flex-col gap-1 text-[10px] tracking-[0.15em] font-sans font-bold text-stone-500 uppercase">
-                      <span className="text-[#ff5a00] font-black">12 LOGOS SHAPED</span>
-                      <span>EST. 2021 - PRESENT</span>
+                        <span className="text-[#ff5a00] font-black">12 LOGO'S SHAPED EST</span>
                     </div>
                   </div>
                 );
