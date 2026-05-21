@@ -87,6 +87,8 @@ export default function PosterGallerySection() {
                   <img 
                     src={`${basePath}${poster.src}`} 
                     alt={poster.alt}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto block transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   />
                   {/* Subtle Grainy Overlay on Hover */}
