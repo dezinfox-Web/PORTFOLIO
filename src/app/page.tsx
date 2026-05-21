@@ -23,9 +23,8 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   const handleEnterExperience = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    if (logoSectionRef.current) {
+      logoSectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
