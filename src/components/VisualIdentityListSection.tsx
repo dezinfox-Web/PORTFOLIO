@@ -132,14 +132,9 @@ export default function VisualIdentityListSection() {
                 </ul>
               )}
 
-              <div className="flex flex-col gap-2 pt-2 text-[10px] tracking-[0.15em] font-sans font-bold text-stone-500 uppercase">
-                <span>{project.date}</span>
-                {project.concept && (
-                  <span className="text-[#ff5a00] mt-1 normal-case font-extrabold italic">
-                    {project.concept}
-                  </span>
-                )}
-              </div>
+                <div className="flex flex-col gap-2 pt-2 text-[10px] tracking-[0.15em] font-sans font-bold text-stone-500 uppercase">
+                  <span>{project.date}</span>
+                </div>
             </div>
 
             {/* Right Collage Column */}

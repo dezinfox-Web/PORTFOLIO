@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required because GitHub Pages doesn't support Next.js dynamic image optimization
   },
-  basePath: '/PORTFOLIO', // Exact name of your GitHub repository
+  turbopack: {
+    root: __dirname,
+  },
   assetPrefix: '/PORTFOLIO/',
 };
 
