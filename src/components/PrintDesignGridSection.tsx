@@ -25,6 +25,7 @@ const GRID_ITEMS = [
 ];
 
 export default function PrintDesignGridSection({ scrollProgress }: PrintDesignGridSectionProps) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const defaultProgress = useMotionValue(1);
   const progress = scrollProgress || defaultProgress;
 
@@ -114,7 +115,7 @@ export default function PrintDesignGridSection({ scrollProgress }: PrintDesignGr
               >
                 <div className="relative w-full h-[250px] flex items-center justify-center overflow-hidden rounded-md shadow-sm">
                   <img 
-                    src={item.src} 
+                    src={`${basePath}${item.src}`} 
                     alt={item.alt}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
@@ -158,7 +159,7 @@ export default function PrintDesignGridSection({ scrollProgress }: PrintDesignGr
                 >
                   <div className="relative w-full h-[300px] flex items-center justify-center overflow-hidden rounded-md shadow-sm">
                     <img 
-                      src={item.src} 
+                      src={`${basePath}${item.src}`} 
                       alt={item.alt} 
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     />

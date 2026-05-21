@@ -20,6 +20,7 @@ const FLOATING_LOGOS = [
 ];
 
 export default function FloatingUniverseSection() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const containerRef = useRef<HTMLDivElement>(null);
 
   // High performance spring physics for mouse parallax
@@ -123,7 +124,7 @@ export default function FloatingUniverseSection() {
                   className="w-full transition-all duration-500 group-hover:opacity-100 group-hover:filter-none group-hover:scale-110 drop-shadow-sm group-hover:drop-shadow-[0_0_15px_rgba(255,90,0,0.5)]"
                 >
                   <img 
-                    src={logo.src} 
+                    src={`${basePath}${logo.src}`} 
                     alt={logo.name} 
                     className={`${logo.w} object-contain`} 
                     style={{

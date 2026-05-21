@@ -34,6 +34,7 @@ const GRID_ITEMS = [
 ];
 
 export default function LogoGridSection({ scrollProgress }: LogoGridSectionProps) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const defaultProgress = useMotionValue(1);
   const progress = scrollProgress || defaultProgress;
 
@@ -124,7 +125,7 @@ export default function LogoGridSection({ scrollProgress }: LogoGridSectionProps
               >
                 <div className="relative w-full h-24 flex items-center justify-center">
                   <img 
-                    src={item.src} 
+                    src={`${basePath}${item.src}`} 
                     alt={item.alt}
                     className={`${
                       isSmallLogo ? 'max-h-[50px] max-w-[65%]' : 'max-h-[72px] max-w-[85%]'
@@ -169,7 +170,7 @@ export default function LogoGridSection({ scrollProgress }: LogoGridSectionProps
                 >
                   <div className="relative w-full h-16 flex items-center justify-center">
                     <img 
-                      src={logo.src} 
+                      src={`${basePath}${logo.src}`} 
                       alt={logo.alt} 
                       className={`${
                         isSmallLogo ? 'max-h-[32px] max-w-[65%]' : 'max-h-[48px] max-w-[85%]'

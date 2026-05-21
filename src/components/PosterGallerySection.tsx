@@ -17,6 +17,7 @@ const POSTERS = [
 ];
 
 export default function PosterGallerySection() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const containerRef = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -79,7 +80,7 @@ export default function PosterGallerySection() {
                 {/* Image Container with Parallax Zoom */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <img 
-                    src={poster.src} 
+                    src={`${basePath}${poster.src}`} 
                     alt={poster.alt}
                     className={`w-full h-full object-cover ${poster.position || 'object-center'} transition-transform duration-[1.5s] ease-out group-hover:scale-110`}
                   />
