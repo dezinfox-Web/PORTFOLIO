@@ -120,13 +120,10 @@ export default function ContactFooterSection() {
 
           {/* Name block */}
           <div className="flex flex-col items-center leading-none select-none">
-            <span
-              className="text-[15vw] md:text-[11vw] font-display font-black tracking-[-0.04em] text-white uppercase"
-              style={{ lineHeight: 0.85 }}
-            >
+            <h2 className="text-[8vw] md:text-[6.5vw] font-poppins font-black tracking-tighter leading-none text-white uppercase">
               SACHIN
-            </span>
-            <span className="text-[3vw] md:text-[2vw] font-sans font-bold tracking-[0.5em] text-[#ff5a00] uppercase mt-3">
+            </h2>
+            <span className="text-[2vw] md:text-[1.5vw] font-sans font-bold tracking-[0.5em] text-[#ff5a00] uppercase mt-4">
               design studio
             </span>
           </div>

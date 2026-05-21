@@ -106,7 +106,7 @@ export default function VisualIdentityIntroSection() {
         {/* Faint Horizontal Outline Watermark */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03] overflow-hidden">
           <h2
-            className="text-[16vw] font-display font-black tracking-tighter text-white uppercase whitespace-nowrap"
+            className="text-[16vw] font-poppins font-black tracking-tighter text-white uppercase whitespace-nowrap"
             style={{
               WebkitTextStroke: '2px white',
               fill: 'none',
@@ -118,14 +118,10 @@ export default function VisualIdentityIntroSection() {
         </div>
 
         {/* Main Visual Identity Header Stack */}
-        <div className="flex flex-col items-center select-none">
-          <span className="text-[10vw] md:text-[8vw] font-display font-black tracking-tighter leading-none text-white uppercase drop-shadow-[0_0_30px_rgba(255,255,255,0.03)] animate-pulse">
-            VISUAL
-          </span>
-          <span className="text-[10vw] md:text-[8vw] font-display font-black tracking-tighter leading-none text-[#ff5a00] uppercase drop-shadow-[0_0_40px_rgba(255,90,0,0.12)]">
-            IDENTITY
-          </span>
-        </div>
+        <h2 className="text-[8vw] md:text-[6.5vw] font-poppins font-black tracking-tighter leading-none uppercase select-none flex flex-col items-center justify-center">
+          <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.03)]">VISUAL</span>
+          <span className="text-[#ff5a00] drop-shadow-[0_0_40px_rgba(255,90,0,0.12)] mt-[0.5vw]">IDENTITY</span>
+        </h2>
 
         {/* Subtitle bottom stack */}
         <div className="flex flex-col items-center gap-2 mt-8 font-sans font-semibold">

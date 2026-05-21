@@ -78,7 +78,7 @@ export default function LogoFolioSection({ scrollProgress }: LogoFolioSectionPro
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none z-10">
         <motion.h2
           style={{ scale: titleScale, opacity: titleOpacity }}
-          className="text-[8vw] md:text-[6.5vw] font-display font-black tracking-tighter leading-none uppercase select-none flex items-center justify-center"
+          className="text-[8vw] md:text-[6.5vw] font-poppins font-black tracking-tighter leading-none uppercase select-none flex items-center justify-center"
         >
           <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.05)]">LOGO</span>
           <span className="text-[#ff5a00] ml-[1.5vw] drop-shadow-[0_0_40px_rgba(255,90,0,0.15)]">FOLIO</span>

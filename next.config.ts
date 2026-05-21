@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export', // Outputs static HTML/CSS/JS to an 'out' folder
   images: {
@@ -8,7 +10,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
-  assetPrefix: '/PORTFOLIO/',
+  assetPrefix: isProd ? '/PORTFOLIO/' : undefined,
+  basePath: isProd ? '/PORTFOLIO' : undefined,
 };
 
 export default nextConfig;

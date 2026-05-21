@@ -106,7 +106,7 @@ export default function PosterDesignSection() {
         {/* Faint Horizontal Outline Watermark */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03] overflow-hidden">
           <h2
-            className="text-[14vw] font-display font-black tracking-tighter text-white uppercase whitespace-nowrap scale-y-125"
+            className="text-[14vw] font-poppins font-black tracking-tighter text-white uppercase whitespace-nowrap scale-y-125"
             style={{
               WebkitTextStroke: '2px white',
               fill: 'none',
@@ -117,15 +117,11 @@ export default function PosterDesignSection() {
           </h2>
         </div>
 
-        {/* Main Header Stack with condensed text effect using scale-y */}
-        <div className="flex flex-col items-center select-none scale-y-150 transform-gpu mb-8">
-          <span className="text-[10vw] md:text-[8.5vw] font-display font-black tracking-tighter leading-[0.8] text-white uppercase drop-shadow-[0_0_30px_rgba(255,255,255,0.03)] animate-pulse">
-            POSTER
-          </span>
-          <span className="text-[10vw] md:text-[8.5vw] font-display font-black tracking-tighter leading-[0.8] text-[#ff5a00] uppercase drop-shadow-[0_0_40px_rgba(255,90,0,0.12)] -mt-1 md:-mt-2">
-            DESIGN
-          </span>
-        </div>
+        {/* Main Header Stack with standardized style */}
+        <h2 className="text-[8vw] md:text-[6.5vw] font-poppins font-black tracking-tighter leading-none uppercase select-none flex flex-col items-center justify-center">
+          <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.03)]">POSTER</span>
+          <span className="text-[#ff5a00] drop-shadow-[0_0_40px_rgba(255,90,0,0.12)] mt-[0.5vw]">DESIGN</span>
+        </h2>
 
         {/* Subtitle bottom stack */}
         <div className="flex flex-col items-center gap-2 mt-12 font-sans font-semibold">
