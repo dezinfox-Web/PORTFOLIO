@@ -160,20 +160,7 @@ export default function ContactFooterSection() {
             swamynathansachin@gmail.com
           </a>
 
-          {/* Instagram / Social */}
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-[#ff5a00] transition-colors duration-300 pointer-events-auto"
-          >
-            <svg className="w-3.5 h-3.5 shrink-0 text-[#ff5a00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
-            @sachin.design
-          </a>
+
         </motion.div>
 
         {/* Copyright line */}
