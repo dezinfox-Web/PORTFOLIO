@@ -225,23 +225,20 @@ export default function AboutSection({ scrollProgress }: AboutSectionProps) {
               <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
             </svg>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-[#ff6a00] uppercase">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-[#ff6a00] uppercase mb-6">
               ABOUT ME
             </h2>
+            <p className="text-lg md:text-xl text-neutral-900 font-display font-black leading-tight mb-2 max-w-2xl">
+              Hey, I’m a Graphic Designer…
+            </p>
+            <p className="text-sm md:text-base text-[#ff6a00] font-sans leading-relaxed font-black italic mb-6 max-w-2xl">
+              …and yes, I survive on coffee, deadlines, and “just one small change.”
+            </p>
+            <p className="text-sm md:text-base text-neutral-800 font-sans leading-relaxed font-semibold mb-4 max-w-2xl">
+              With 2 years of experience in graphic design, I turn random ideas, late-night client messages, and “make it more attractive” into creative visuals that actually work. From posters and branding to social media creatives and packaging designs, I enjoy making brands look less boring and more unforgettable.
+            </p>
             <p className="text-sm md:text-base text-neutral-800 font-sans leading-relaxed font-semibold max-w-2xl">
-              I’m a graphic designer with over two years of experience turning ideas into compelling visual stories that elevate brands.
-            </p>
-            <p className="text-sm md:text-base text-neutral-800 font-sans leading-relaxed font-semibold mt-4 max-w-2xl">
-              Fueled by coffee and tight deadlines, I thrive on the challenge of perfecting every detail – even when that "one small change" feels like a marathon.
-            </p>
-            <ul className="list-disc list-inside text-sm md:text-base text-neutral-800 font-sans leading-relaxed mt-4 max-w-2xl">
-              <li>Brand identity & logo design</li>
-              <li>Print & digital posters</li>
-              <li>Social‑media creatives & campaigns</li>
-              <li>Packaging and product visualization</li>
-            </ul>
-            <p className="text-sm md:text-base text-neutral-800 font-sans leading-relaxed font-semibold mt-4 max-w-2xl">
-              I blend strategic thinking with bold aesthetics, delivering designs that capture attention faster than a scroll‑through feed.
+              I specialize in creating designs that grab attention faster than Instagram reels. Whether it’s a bold poster, a clean logo, or a creative campaign, I mix creativity with strategy — and sometimes a little bit of panic before deadlines.
             </p>
 
 

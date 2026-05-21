@@ -126,7 +126,7 @@ export default function Objects() {
         src="/assets/obj-logo-transparent.png"
         alt="Studio Logo"
         corner="top-right"
-        size="w-[18rem]"
+        size="w-[14rem] md:w-[18rem]"
         parallaxSpeed={0.4}
         delay={0.4}
         rotate={6}
@@ -139,7 +139,7 @@ export default function Objects() {
         src="/assets/obj-tablet.png"
         alt="Drawing Tablet"
         corner="top-left"
-        size="w-[18rem]"
+        size="w-[14rem] md:w-[18rem]"
         parallaxSpeed={0.35}
         delay={0.6}
         rotate={22}

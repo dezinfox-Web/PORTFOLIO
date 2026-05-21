@@ -5,11 +5,13 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const POSTERS = [
   { src: '/assets/poster/set1.jpeg', alt: 'Poster Set 1', span: 'col-span-1 md:col-span-2 row-span-2', position: 'object-[50%_25%]' },
-  { src: '/assets/poster/image copy.png', alt: 'Poster Image', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/image copy.png', alt: 'Poster Image 1', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/image copy 2.png', alt: 'Poster Image 2', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/set2.jpeg', alt: 'Poster Set 2', span: 'col-span-1 md:col-span-1 row-span-1', position: 'object-[50%_25%]' },
   { src: '/assets/poster/image copy 3.png', alt: 'Poster Image 3', span: 'col-span-1 md:col-span-1 row-span-2' },
   { src: '/assets/poster/set3.jpeg', alt: 'Poster Set 3', span: 'col-span-1 md:col-span-2 row-span-1' },
   { src: '/assets/poster/image copy 4.png', alt: 'Poster Image 4', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/image copy 5.png', alt: 'Poster Image 5', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/set4.jpeg', alt: 'Poster Set 4', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/image copy 6.png', alt: 'Poster Image 6', span: 'col-span-1 md:col-span-2 row-span-1' },
   { src: '/assets/poster/image.png', alt: 'Poster Image New', span: 'col-span-1 md:col-span-1 row-span-1' },
@@ -64,9 +66,9 @@ export default function PosterGallerySection() {
         </div>
       </motion.div>
 
-      {/* Innovative Asymmetric Editorial Grid */}
+      {/* Innovative Masonry Poster Grid */}
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[250px] md:auto-rows-[300px] gap-6">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
           {POSTERS.map((poster, index) => {
             return (
               <motion.div 
@@ -75,14 +77,14 @@ export default function PosterGallerySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: (index % 3) * 0.1, ease: [0.21, 0.47, 0.32, 0.98] }}
-                className={`relative group overflow-hidden rounded-xl bg-stone-200/50 ${poster.span}`}
+                className="relative group overflow-hidden rounded-xl bg-stone-200/50 break-inside-avoid mb-6 w-full shadow-md hover:shadow-xl transition-all duration-300 border border-stone-200/30"
               >
-                {/* Image Container with Parallax Zoom */}
-                <div className="absolute inset-0 w-full h-full overflow-hidden">
+                {/* Image Container with Zoom */}
+                <div className="relative w-full h-auto overflow-hidden bg-stone-100">
                   <img 
                     src={`${basePath}${poster.src}`} 
                     alt={poster.alt}
-                    className={`w-full h-full object-cover ${poster.position || 'object-center'} transition-transform duration-[1.5s] ease-out group-hover:scale-110`}
+                    className="w-full h-auto block transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   />
                   {/* Subtle Grainy Overlay on Hover */}
                   <div className="absolute inset-0 bg-[#161d31]/0 group-hover:bg-[#161d31]/20 transition-colors duration-700 pointer-events-none mix-blend-overlay" />

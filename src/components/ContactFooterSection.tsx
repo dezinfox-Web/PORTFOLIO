@@ -67,12 +67,7 @@ export default function ContactFooterSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#ff5a00] animate-pulse" />
             <span className="text-[9px] tracking-[0.35em] text-white/40 font-display font-medium uppercase">Portfolio</span>
           </div>
-          <div className="text-[7.5px] tracking-[0.25em] text-white/20 font-sans flex flex-col gap-0.5 pl-3.5 leading-relaxed font-bold">
-            <span>THINK.</span>
-            <span>DESIGN.</span>
-            <span>CREATE.</span>
-            <span>REPEAT.</span>
-          </div>
+
         </div>
 
         {/* Top Right coordinates */}
@@ -144,13 +139,13 @@ export default function ContactFooterSection() {
         >
           {/* Phone */}
           <a
-            href="tel:+917339119498"
+            href="tel:+919344226272"
             className="flex items-center gap-2 hover:text-[#ff5a00] transition-colors duration-300 pointer-events-auto"
           >
             <svg className="w-3.5 h-3.5 shrink-0 text-[#ff5a00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
             </svg>
-            +91 73391 19498
+            +91 93442 26272
           </a>
 
           {/* Email */}

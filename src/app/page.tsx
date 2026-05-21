@@ -22,6 +22,13 @@ import ContactFooterSection from '@/components/ContactFooterSection';
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
+  const handleEnterExperience = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     // Artificial delay to simulate "loading" cinematic intro
     const timer = setTimeout(() => setLoading(false), 500);
@@ -96,18 +103,7 @@ export default function Home() {
               <Objects />
 
 
-              {/* LEFT MOTTO */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className="absolute top-24 left-1/2 -translate-x-1/2 md:left-10 md:translate-x-0 z-50 flex flex-col gap-1 text-[8px] tracking-[0.3em] uppercase text-white/30 font-medium"
-              >
-                <span>THINK.</span>
-                <span>DESIGN.</span>
-                <span>CREATE.</span>
-                <span>REPEAT.</span>
-              </motion.div>
+
 
               {/* Main Content Block — shifted down */}
               <div className="flex flex-col items-center mt-20">
@@ -117,7 +113,7 @@ export default function Home() {
 
                 {/* Single High-End CTA Button */}
                 <div className="relative z-40 mt-10">
-                  <CinematicButton variant="primary">
+                  <CinematicButton variant="primary" onClick={handleEnterExperience}>
                     ENTER EXPERIENCE
                   </CinematicButton>
                 </div>

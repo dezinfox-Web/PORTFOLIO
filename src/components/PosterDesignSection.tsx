@@ -70,12 +70,7 @@ export default function PosterDesignSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#ff5a00] animate-pulse" />
             <span className="text-[9px] tracking-[0.35em] text-white/40 font-display font-medium">THINK</span>
           </div>
-          <div className="text-[7.5px] tracking-[0.25em] text-white/20 font-sans flex flex-col gap-0.5 pl-3.5 leading-relaxed font-bold">
-            <span>THINK.</span>
-            <span>DESIGN.</span>
-            <span>CREATE.</span>
-            <span>REPEAT.</span>
-          </div>
+
         </div>
 
         {/* Center 4-Point Sparkle with soft bloom glow */}
