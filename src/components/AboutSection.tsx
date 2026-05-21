@@ -74,6 +74,7 @@ interface AboutSectionProps {
 }
 
 export default function AboutSection({ scrollProgress }: AboutSectionProps) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const defaultProgress = useMotionValue(0);
   const progress = scrollProgress || defaultProgress;
 
@@ -108,7 +109,7 @@ export default function AboutSection({ scrollProgress }: AboutSectionProps) {
           >
             <TiltedCard>
               <Image
-                src="/assets/sachin_portrait_real.png"
+                src={`${basePath}/assets/sachin_portrait_real.png`}
                 alt="Sachin - Creative Designer"
                 fill
                 sizes="(max-width: 768px) 100vw, 450px"

@@ -34,6 +34,7 @@ const CORNER_FROM: Record<CornerObjectProps['corner'], { x: number; y: number }>
 const CornerObject = ({
   src, alt, corner, size, parallaxSpeed, delay, rotate = 0, offsetX = 0, offsetY = 0,
 }: CornerObjectProps) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -79,7 +80,7 @@ const CornerObject = ({
       }}
     >
       <Image
-        src={src}
+        src={`${basePath}${src}`}
         alt={alt}
         width={600}
         height={600}

@@ -80,6 +80,7 @@ const PROJECTS = [
 ];
 
 export default function VisualIdentityListSection() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/PORTFOLIO' : '';
   return (
     <section
       id="visual-identity-list"
@@ -143,7 +144,7 @@ export default function VisualIdentityListSection() {
               {/* Image Container */}
               <div className="flex items-center justify-center">
                 <Image
-                  src={project.image}
+                  src={`${basePath}${project.image}`}
                   alt={project.title}
                   width={400}
                   height={400}
