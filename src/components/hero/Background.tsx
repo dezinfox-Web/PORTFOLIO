@@ -9,13 +9,13 @@ export const AmbientGlow = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.4, scale: 1 }}
-        transition={{ duration: 2, delay: 0.1, ease: "easeOut" }}
+        transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
         className="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] cinematic-glow"
       />
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.3, scale: 1 }}
-        transition={{ duration: 2.5, delay: 0.2, ease: "easeOut" }}
+        transition={{ duration: 2.5, delay: 0.7, ease: "easeOut" }}
         className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] cinematic-glow"
         style={{ background: 'radial-gradient(circle, #ff5a00 0%, transparent 70%)' }}
       />

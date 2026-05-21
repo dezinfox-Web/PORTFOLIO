@@ -96,7 +96,7 @@ export default function Typography() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
         className="flex gap-4 mt-6 text-[10px] md:text-xs tracking-[0.3em] uppercase text-white/40"
       >
         <span>Graphic Design</span>
