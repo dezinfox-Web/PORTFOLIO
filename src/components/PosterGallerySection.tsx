@@ -15,7 +15,10 @@ const POSTERS = [
   { src: '/assets/poster/set4.jpeg', alt: 'Poster Set 4', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/image copy 6.png', alt: 'Poster Image 6', span: 'col-span-1 md:col-span-2 row-span-1' },
   { src: '/assets/poster/image.png', alt: 'Poster Image New', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/1 (11).jpeg', alt: 'Poster Set 6', span: 'col-span-1 md:col-span-1 row-span-1' },
   { src: '/assets/poster/set5.jpeg', alt: 'Poster Set 5', span: 'col-span-1 md:col-span-3 row-span-2' },
+  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 8.31.36 PM.jpeg', alt: 'Poster Campaign 1', span: 'col-span-1 md:col-span-1 row-span-1' },
+  { src: '/assets/poster/WhatsApp Image 2026-05-21 at 8.31.37 PM.jpeg', alt: 'Poster Campaign 2', span: 'col-span-1 md:col-span-1 row-span-1' },
 ];
 
 export default function PosterGallerySection() {
