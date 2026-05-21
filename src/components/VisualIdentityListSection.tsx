@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
 const PROJECTS = [
@@ -79,6 +80,7 @@ const PROJECTS = [
 ];
 
 export default function VisualIdentityListSection() {
+  const router = useRouter();
   return (
     <section
       id="visual-identity-list"
@@ -142,7 +144,7 @@ export default function VisualIdentityListSection() {
               {/* Image Container */}
               <div className="flex items-center justify-center">
                 <img
-                  src={project.image}
+                  src={router.basePath + project.image}
                   alt={project.title}
                   className="max-w-[400px] h-auto"
                 />
